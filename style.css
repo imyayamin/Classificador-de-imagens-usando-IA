@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+input {
+    margin: 10px;
+}
+
+#uploadedImage {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 400px;
+}
+
+#label-container {
+    margin-top: 20px;
+    font-size: 18px;
+}
