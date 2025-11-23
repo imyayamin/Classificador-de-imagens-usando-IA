@@ -27,3 +27,78 @@ input {
     font-weight: 700;
     color: #222;
 }
+
+#webcam-container canvas {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 12px;
+    width: 640px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Layout: webcam à esquerda, resultado à direita */
+#main-area {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+/* Header: título e botões juntos */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#header-controls {
+    display: flex;
+    align-items: center;
+}
+
+#webcam-column {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#result-column {
+    flex: 0 0 320px;
+    text-align: left;
+}
+
+.webcam-controls {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+#label-container {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+/* Mobile: empilha verticalmente */
+@media (max-width: 800px) {
+    #main-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #result-column {
+        width: 100%;
+        max-width: 640px;
+    }
+}
